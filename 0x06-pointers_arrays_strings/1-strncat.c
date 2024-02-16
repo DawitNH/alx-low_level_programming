@@ -5,6 +5,7 @@
  *
  * @dest: destination
  * @src: Source
+ * @n: number of characters
  * Return: pointer to dest
  */
 
@@ -18,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		destCount++;
 	}
-	while (destCount < n)
+	while (srcCount < n)
 	{
 		*(dest + destCount) = *(src + srcCount);
 		if (*(src + srcCount) == '\0')
